@@ -1,0 +1,24 @@
+@import "../../variables";
+
+.Container {
+  display: flex;
+  padding: 20px;
+}
+
+.Left {
+  display: flex;
+  flex: 1 1 50%;
+  align-items: center;
+}
+
+.Right {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 50%;
+}
+
+.Logo {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}

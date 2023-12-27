@@ -1,0 +1,44 @@
+// scss variables
+@import "./variables";
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: $primary-text-size;
+  font-family: $primary-font;
+  background-color: $primary200;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+button {
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: $primary800;
+  color: white;
+  border: none;
+  font-size: $primary-text-size;
+  font-family: $primary-font;
+  line-height: 24px;
+}
+
+button:hover {
+  background-color: $primary700;
+}
+
+button:active {
+  background-color: $primary800;
+}
