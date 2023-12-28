@@ -14,11 +14,32 @@
 .Right {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   flex: 1 1 50%;
+  gap: 10px;
 }
 
 .Logo {
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
+  font-family: $LogoFontFamily;
+}
+
+.SayHello {
+  display: flex;
+  font-size: $ButtonFontSize;
+  line-height: $ButtonLineHeight;
+  padding: $ButtonPadding;
+  border-radius: $ButtonBorderRadius;
+  font-weight: $ButtonFontWeight;
+}
+
+.SayHello:hover {
+  background-color: $primary300;
+  border-radius: 10px;
+}
+
+.SayHello:active {
+  background-color: $primary200;
 }

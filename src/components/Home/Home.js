@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 import DesignList from "../DesignList/DesignList";
+import Footer from "../Footer/Footer";
 import styles from "./Home.module.scss";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <div className={styles.Content}>
         <Navbar />
         <DesignList />
+        <Footer />
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 // scss variables
 @import "./theme";
-@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Silkscreen:wght@400;700&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -24,15 +23,16 @@ a {
 
 button {
   display: flex;
-  padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: $ButtonBorderRadius;
   cursor: pointer;
   background-color: $primary800;
   color: white;
   border: none;
-  font-size: $primaryFontSize;
   font-family: $primaryFontFamily;
-  line-height: 24px;
+  font-size: $ButtonFontSize;
+  line-height: $ButtonLineHeight;
+  padding: $ButtonPadding;
+  font-weight: $ButtonFontWeight;
 }
 
 button:hover {

@@ -27,7 +27,7 @@
 
 .ShareContainer {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   cursor: pointer;
 }
 
@@ -35,6 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2px;
 }
 
 .LogoButton:hover {

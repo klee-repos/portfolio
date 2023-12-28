@@ -8,7 +8,13 @@ const Navbar = () => {
         <span className={styles.Logo}>KVN</span>
       </div>
       <div className={styles.Right}>
-        <button type="button">Sign Up</button>
+        <a
+          className={styles.SayHello}
+          href="mailto:kevin@kvnlee.com?subject=Hello 👋"
+        >
+          👋 Say Hello
+        </a>
+        <button type="button">Get Figma Access</button>
       </div>
     </div>
   );
