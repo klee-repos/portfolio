@@ -1,5 +1,5 @@
 // scss variables
-@import "./variables";
+@import "./theme";
 @import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
 
 html {
@@ -11,8 +11,8 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: $primary-text-size;
-  font-family: $primary-font;
+  font-size: $primaryFontSize;
+  font-family: $primaryFontFamily;
   background-color: $primary200;
 }
 
@@ -30,8 +30,8 @@ button {
   background-color: $primary800;
   color: white;
   border: none;
-  font-size: $primary-text-size;
-  font-family: $primary-font;
+  font-size: $primaryFontSize;
+  font-family: $primaryFontFamily;
   line-height: 24px;
 }
 
