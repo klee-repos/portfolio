@@ -3,32 +3,80 @@ import { motion } from "framer-motion";
 import * as styles from "./styles";
 import GlobalStyles from "../../GlobalStyles";
 import { RightArrow } from "../icons";
-import PortfolioLinks from "../portfolioLinks";
-import PortfolioPill from "../PortfolioPill";
+import Profile from "../Profile";
+import Portfolio from "../Portfolio";
 
 const EMAIL = "hello@kvnlee.com";
 const SUBJECT = "👋 Hello";
+
+const delayIncrement = 0.3;
+
+const delays = [
+  1 * delayIncrement,
+  2 * delayIncrement,
+  3 * delayIncrement,
+  4 * delayIncrement,
+  5 * delayIncrement,
+  6 * delayIncrement,
+];
 
 const Home = () => {
   const handleSayHelloClick = () => {
     const mailtoUrl = `mailto:${encodeURIComponent(
       EMAIL
     )}?subject=${encodeURIComponent(SUBJECT)}`;
-
     window.open(mailtoUrl, "_blank");
   };
 
   return (
     <div css={styles.Container}>
       <GlobalStyles />
-      <div css={styles.NameColumn}>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.5,
+          delay: delays[0],
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+        css={styles.NameColumn}
+      >
         <span css={styles.Name}>Kevin Lee</span>
-      </div>
+      </motion.div>
       <div css={styles.ContentColumn}>
         <div css={styles.Column}>
-          <span css={styles.H1}>All Things Digital</span>
-          <span css={styles.H2}>Full-spectrum. Multi-disciplinary.</span>
+          <motion.span
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.5,
+              delay: delays[1],
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            css={styles.H1}
+          >
+            All Things Digital
+          </motion.span>
+          <motion.span
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.5,
+              delay: delays[2],
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
+            css={styles.H2}
+          >
+            Full-spectrum. Multi-disciplinary.
+          </motion.span>
           <motion.button
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.5,
+              delay: delays[3],
+              ease: [0, 0.71, 0.2, 1.01],
+            }}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.95 }}
             css={styles.Button}
@@ -39,29 +87,8 @@ const Home = () => {
             <span>Say Hello</span>
             <RightArrow />
           </motion.button>
-          <span css={styles.Body}>A modern internet entrepreneur.</span>
-          <span css={styles.Body}>
-            I’ve built internet startups. I’ve launched AI systems for Fortune
-            500 businesses. I’ve launched smart contracts on Blockchains.
-          </span>
-          <span css={styles.Body}>
-            Hands on experience with every discipline in the product lifecycle.
-            From Design to Development to Go-To-Market.
-          </span>
-          <span css={styles.Body}>
-            Currently building the first Marketing AI Agent that can manage
-            digital marketing for any business.
-          </span>
-          <div css={styles.PortfolioContainer}>
-            <span css={styles.SectionTitle}>Portfolio</span>
-            <div css={styles.Portfolio}>
-              {PortfolioLinks.map((link, index) => {
-                return (
-                  <PortfolioPill key={index} name={link.name} url={link.url} />
-                );
-              })}
-            </div>
-          </div>
+          <Profile delays={delays} />
+          <Portfolio delays={delays} />
         </div>
         <div css={styles.ColumnFill}></div>
       </div>
