@@ -1,11 +1,9 @@
-import React from "react";
+/** @jsxImportSource @emotion/react */
 import PropTypes from "prop-types";
-import styles from "./DesignList.module.scss";
+import * as styles from "./styles";
 
 const FigmaIframe = ({ url }) => {
-  return (
-    <iframe className={styles.FigmaIframe} src={url} allowfullscreen></iframe>
-  );
+  return <iframe css={styles.FigmaIframe} src={url} allowfullscreen></iframe>;
 };
 
 FigmaIframe.propTypes = {
