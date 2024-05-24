@@ -15,16 +15,12 @@ export const ListOfDesigns = css`
 
 export const FigmaIframe = css`
   display: flex;
-  width: 600px;
+  width: 100%;
   height: 400px;
   border: none;
-  @media (min-width: 768px) {
-    width: 100%;
-    height: 400px;
-  }
 `;
 export const DesignItem = css`
-  border-radius: 10px;
+  border-radius: 24px;
   padding: 20px;
   background-color: ${theme.primary100};
 `;

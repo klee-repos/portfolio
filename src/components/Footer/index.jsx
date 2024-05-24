@@ -3,10 +3,10 @@ import * as styles from "./styles";
 
 const Footer = () => {
   return (
-    <div className={styles.Container}>
-      <div className={styles.Row}>
-        <span className={styles.FooterText}>© kvnlee</span>
-        <span className={styles.FooterText}>Made in ☀️ California, USA</span>
+    <div css={styles.Container}>
+      <div css={styles.Row}>
+        <span css={styles.FooterText}>© kvnlee</span>
+        <span css={styles.FooterText}>Made in ☀️ California, USA</span>
       </div>
     </div>
   );
