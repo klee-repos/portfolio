@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import theme from "../../theme";
+import { themeOld } from "../../theme";
 
 export const Container = css`
   display: flex;
@@ -15,5 +15,5 @@ export const Row = css`
 `;
 
 export const FooterText = css`
-  color: ${theme.primary600};
+  color: ${themeOld.primary600};
 `;

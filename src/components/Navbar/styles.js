@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import theme from "../../theme";
+import { themeOld } from "../../theme";
 
 export const Container = css`
   display: flex;
@@ -24,21 +24,21 @@ export const Logo = css`
   font-size: 20px;
   line-height: 30px;
   font-weight: 700;
-  font-family: ${theme.logoFontFamily};
+  font-family: ${themeOld.logoFontFamily};
 `;
 
 export const SayHello = css`
   display: flex;
-  font-size: ${theme.buttonFontSize};
-  line-height: ${theme.buttonLineHeight};
-  padding: ${theme.buttonPadding};
-  border-radius: ${theme.buttonBorderRadius};
-  font-weight: ${theme.buttonFontWeight};
+  font-size: ${themeOld.buttonFontSize};
+  line-height: ${themeOld.buttonLineHeight};
+  padding: ${themeOld.buttonPadding};
+  border-radius: ${themeOld.buttonBorderRadius};
+  font-weight: ${themeOld.buttonFontWeight};
   &:hover {
-    background-color: ${theme.primary300};
+    background-color: ${themeOld.primary300};
     border-radius: 10px;
   }
   &:active {
-    background-color: ${theme.primary200};
+    background-color: ${themeOld.primary200};
   }
 `;

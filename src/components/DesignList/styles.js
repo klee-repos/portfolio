@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import theme from "../../theme";
+import { themeOld } from "../../theme";
 
 export const Container = css`
   display: flex;
@@ -22,7 +22,7 @@ export const FigmaIframe = css`
 export const DesignItem = css`
   border-radius: 24px;
   padding: 20px;
-  background-color: ${theme.primary100};
+  background-color: ${themeOld.primary100};
 `;
 
 export const ShareContainer = css`
@@ -36,11 +36,11 @@ export const LogoButton = css`
   justify-content: center;
   padding: 2px;
   &:hover {
-    background-color: ${theme.primary200};
+    background-color: ${themeOld.primary200};
     border-radius: 5px;
   }
   &:active {
-    background-color: ${theme.primary100};
+    background-color: ${themeOld.primary100};
     border-radius: 5px;
   }
 `;

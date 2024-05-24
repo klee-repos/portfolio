@@ -2,7 +2,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // internal
-import Home from "./components/Home";
+import Home from "./v2/Home";
 
 const routes = (
   <Router>
