@@ -25,8 +25,8 @@ const Profile = ({ delays }) => {
         Design to Development to Go-To-Market.
       </span>
       <span css={styles.Body}>
-        Currently building the first Marketing AI Agent that can manage digital
-        marketing for any business.
+        Currently building a Marketing AI Agent to manage digital marketing for
+        any business.
       </span>
     </motion.div>
   );

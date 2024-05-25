@@ -67,9 +67,9 @@ const Home = () => {
             }}
             css={styles.H2}
           >
-            Full-spectrum. Multi-disciplinary.
+            Multi-disciplinary. Cross-functional.
           </motion.span>
-          <motion.button
+          <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -77,16 +77,20 @@ const Home = () => {
               delay: delays[3],
               ease: [0, 0.71, 0.2, 1.01],
             }}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.95 }}
-            css={styles.Button}
-            onClick={() => {
-              handleSayHelloClick();
-            }}
+            css={styles.ButtonContainer}
           >
-            <span>Say Hello</span>
-            <RightArrow />
-          </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.95 }}
+              css={styles.Button}
+              onClick={() => {
+                handleSayHelloClick();
+              }}
+            >
+              <span>Say Hello</span>
+              <RightArrow />
+            </motion.button>
+          </motion.div>
           <Profile delays={delays} />
           <Portfolio delays={delays} />
         </div>

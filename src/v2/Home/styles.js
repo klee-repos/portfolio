@@ -11,11 +11,19 @@ export const Container = css`
   gap: 40px;
   align-items: flex-start;
   justify-content: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 0 20px;
+  }
 `;
 
 export const NameColumn = css`
   display: flex;
   padding-top: 60px;
+  white-space: nowrap;
+  @media (max-width: 768px) {
+    padding-top: 0px;
+  }
 `;
 
 export const Name = css`
@@ -36,8 +44,11 @@ export const Column = css`
 
 export const ColumnFill = css`
   display: flex;
-  width: 40%;
+  width: 30%;
   box-sizing: border-box;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const H1 = css`
@@ -47,6 +58,10 @@ export const H1 = css`
 export const H2 = css`
   font-size: 20px;
   font-weight: 600;
+`;
+
+export const ButtonContainer = css`
+  display: flex;
 `;
 
 export const Button = css`
