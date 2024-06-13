@@ -12,11 +12,11 @@ const PortfolioLinks = [
     url: "https://www.linkedin.com/in/theklee/",
   },
   {
-    name: "Github",
+    name: "GitHub",
     url: "https://github.com/klee-repos",
   },
   {
-    name: "Blueprints 2022",
+    name: "2022 Ideation",
     url: "https://www.figma.com/proto/Q2Vn7gTL7M1okUEtZScdBP/Project-Bazaar?page-id=2528%3A18116&node-id=2528-19233&m=dev&scaling=scale-down&starting-point-node-id=2528%3A19233&show-proto-sidebar=1&t=QJwpmxkyaTp0JSM8-1",
   },
 ];

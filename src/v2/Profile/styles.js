@@ -11,5 +11,5 @@ export const Body = css`
   font-size: ${theme.font.size};
   line-height: ${theme.font.lineHeight};
   font-weight: ${theme.font.weight};
-  color: ${theme.color.grey500};
+  color: ${theme.color.grey300};
 `;

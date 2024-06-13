@@ -17,7 +17,7 @@ const Portfolio = ({ delays }) => {
       }}
       css={styles.PortfolioContainer}
     >
-      <span css={styles.SectionTitle}>Portfolio</span>
+      {/* <span css={styles.SectionTitle}>Work</span> */}
       <div css={styles.Portfolio}>
         {PortfolioLinks.map((link, index) => {
           return <PortfolioPill key={index} name={link.name} url={link.url} />;

@@ -12,12 +12,12 @@ const SUBJECT = "👋 Hello";
 const delayIncrement = 0.3;
 
 const delays = [
-  1 * delayIncrement,
-  2 * delayIncrement,
   3 * delayIncrement,
-  4 * delayIncrement,
   5 * delayIncrement,
   6 * delayIncrement,
+  7 * delayIncrement,
+  8 * delayIncrement,
+  9 * delayIncrement,
 ];
 
 const Home = () => {
@@ -67,7 +67,7 @@ const Home = () => {
             }}
             css={styles.H2}
           >
-            Multi-disciplinary. Cross-functional.
+            Multi-disciplinary. Cross-functional Operator.
           </motion.span>
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}

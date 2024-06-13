@@ -19,7 +19,7 @@ export const Container = css`
 
 export const NameColumn = css`
   display: flex;
-  padding-top: 60px;
+  padding-top: 70px;
   white-space: nowrap;
   @media (max-width: 768px) {
     padding-top: 0px;
@@ -38,7 +38,7 @@ export const ContentColumn = css`
 export const Column = css`
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
   box-sizing: border-box;
 `;
 

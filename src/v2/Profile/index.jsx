@@ -17,16 +17,16 @@ const Profile = ({ delays }) => {
     >
       <span css={styles.Body}>A modern internet entrepreneur.</span>
       <span css={styles.Body}>
-        I’ve built internet startups. I’ve launched AI systems for Fortune 500
+        I’ve created internet startups. I’ve launched AI systems for Fortune 500
         businesses. I’ve launched smart contracts on Blockchains.
       </span>
       <span css={styles.Body}>
-        Hands on experience with every discipline in the product lifecycle. From
-        Design to Development to Go-To-Market.
+        Hands on experience with every core discipline in the product lifecycle.
+        From Design to Development to Go-To-Market.
       </span>
       <span css={styles.Body}>
-        Currently building a Marketing AI Agent to manage digital marketing for
-        any business.
+        Currently developing a Marketing AI Agent that can manage digital
+        marketing for any business.
       </span>
     </motion.div>
   );

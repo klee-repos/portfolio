@@ -18,7 +18,7 @@ export const Portfolio = css`
   display: flex;
   align-items: flex-start;
   align-content: flex-start;
-  gap: 10px;
+  gap: 20px;
   align-self: stretch;
   flex-wrap: wrap;
 `;

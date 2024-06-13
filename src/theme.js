@@ -17,9 +17,9 @@ export const themeOld = {
 
 export const theme = {
   font: {
-    family: "Noto Sans, sans-serif",
-    size: "14px",
-    lineHeight: "22px",
+    family: "Open Sans, sans-serif",
+    size: "16px",
+    lineHeight: "24px",
   },
   color: {
     grey800: "#252626",
